@@ -1,0 +1,33 @@
+<svg>
+    <rect
+    attr.x={{x}} attr.y={{y}}
+    attr.width={{width}} attr.height={{height}}
+    fill="red"
+    (mousedown)="startMoving()"
+    (mouseup)="stopMoving()"
+    (mousemove)="moving($event)"/>
+    <line
+    attr.x1={{x}} attr.y1={{y}}
+    attr.x2={{x+width}} attr.y2={{y}}
+    style="stroke:black;stroke-opacity:0;stroke-width:10;cursor:row-resize"
+    (mousedown)="startResizing(1)"
+    />
+    <line
+    attr.x1={{x}} attr.y1={{y+height}}
+    attr.x2={{x+width}} attr.y2={{y+height}}
+    style="stroke:black;stroke-opacity:0;stroke-width:10;cursor:row-resize"
+    (mousedown)="startResizing(2)"
+    />
+    <line
+    attr.x1={{x}} attr.y1={{y}}
+    attr.x2={{x}} attr.y2={{y+height}}
+    style="stroke:black;stroke-opacity:0;stroke-width:10;cursor:col-resize"
+    (mousedown)="startResizing(3)"
+    />
+    <line
+    attr.x1={{x+width}} attr.y1={{y}}
+    attr.x2={{x+width}} attr.y2={{y+height}}
+    style="stroke:black;stroke-opacity:0;stroke-width:10;cursor:col-resize"
+    (mousedown)="startResizing(4)"
+    />
+</svg>

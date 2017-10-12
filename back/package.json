@@ -1,0 +1,16 @@
+{
+  "name": "lander_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Fur Nocte",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1",
+    "p-promise": "^0.5.0"
+  }
+}

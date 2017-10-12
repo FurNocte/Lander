@@ -1,0 +1,12 @@
+<div class="d-inline" *ngIf="display">
+    <div>
+        Lander v {{version}}
+    </div>
+    <div>
+        <a routerLink="/" class="fa fa-home">Home</a>
+        <a routerLink="/builder" class="fa fa-cogs">Builder</a>
+    </div>
+</div>
+<button class="btn btn-success pull-right" (click)="display = !display">
+    <span class="fa fa-bars"></span>
+</button>
